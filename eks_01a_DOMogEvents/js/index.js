@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let number = textCountP.textContent;
 
-    let startNum = 5;
+    let startNum = 8;
 
     number = startNum;
 
