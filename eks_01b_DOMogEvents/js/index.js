@@ -2,6 +2,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // skriv din kode her...
+    let maxNum = 10;
+
+    let minNum = 0;
+
     let textCountP = document.querySelector('#text-count');
 
     let number = textCountP.textContent;
@@ -14,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         textCountP.textContent = number;
 
-        // if (textCountContent == NaN) {
+        // if (textCountContent === NaN) {
         //     textCountContent = parseInt(textCountContent);
         // }
 
@@ -27,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let btnIncrease = document.querySelector('#btn-count-increase');
 
     function eventHandlerIncrease(e) {
-        let maxNum = 10;
         if (number < maxNum) {
             number++;
             updateNumber();
@@ -36,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function eventHandlerDecrease(e) {
-        let minNum = 0;
         if (number > minNum) {
             number--;
             updateNumber();
