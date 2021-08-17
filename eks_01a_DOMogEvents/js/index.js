@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let number = textCountP.textContent;
 
-    number = 5;
+    let startNum = 5;
+
+    number = startNum;
 
     function updateNumber() {
 
@@ -25,7 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let btnIncrease = document.querySelector('#btn-count-increase');
 
     function eventHandlerIncrease(e) {
-        if (number < 10) {
+        let maxNum = 10;
+        if (number < maxNum) {
             number++;
             updateNumber();
         }
@@ -33,7 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function eventHandlerDecrease(e) {
-        if (number > 0) {
+        let minNum = 0;
+        if (number > minNum) {
             number--;
             updateNumber();
         }
